@@ -1,0 +1,368 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+    }
+a {
+    margin-right: 10%;
+    text-decoration: none;
+    color: inherit;
+    }
+
+select {color: none;
+}
+
+/* MON CSS */
+body {
+    background-position: center;
+    border: 0,5% solid #FFFFFF99;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+.fond {
+    opacity: 70%;
+    }
+
+.fond, .corps {
+    position: absolute;
+    width: 100%;
+    }
+
+.header {
+    padding: 2% 0 2% 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    }
+
+.logo {
+    font-family: Inder, sans-serif;
+    font-size: 40px;
+    color:#020202;
+    margin-left: 2%;
+    display: flex;
+    width: 25%;
+    }
+    
+.bouton-page {
+    color:#020202;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    height: 100%;
+    }
+
+.bouton-secondaire {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    }
+
+.bouton-primaire {
+    font-family: Inter;
+    font-size: 20px;
+    height: 40px;
+    text-align: center;
+    background-color:#DAFADB;
+    border-radius: 40px;
+    border: none;
+    width: 25%;
+    }
+
+.bouton-primaire:hover, .bouton-lien:hover {
+    background-color: #f59f44;
+    }
+
+h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 120%;
+    text-align: center;
+    margin: 10%;
+    color: #020202;
+    }
+
+.barre-recherche {
+    width: 95%; 
+    }
+
+.barre {
+    width: 93%;
+    height: 64px;
+    margin-left: 5%;
+    gap: 0px;
+    border-radius: 40px;
+    border: 1px solid #020202;
+    display: flex;
+    align-items: center;
+    }
+
+.select {
+    font-family: Inder;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+    border-right: 1px solid #020202;
+    background:none;
+    width: 100%;
+    height: 100%;
+    }
+
+#searchInput {
+    font-family: Inder;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #020202;
+    width: 100%;
+    background: none;
+    border: none;
+    }
+
+input::placeholder {
+    color: #020202; 
+    }
+
+button.loupe {
+    background:none;
+    border: none;
+    }
+    
+.loupe i:hover {
+    color: #f59f44;
+    }
+
+button.loupe i {
+    font-size: 46px
+    }
+
+.déroulant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    } 
+    
+.Mon-appareil {
+    width: 44%;
+    height: 348px;
+    border-radius: 0px 0px 0px 40px;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.nom {
+    font-family: Inder;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:3%
+    }
+
+.validation {
+    width: 44%;
+    height: 348px;
+    gap: 3%;
+    border-radius: 0px 0px 40px 0px;
+    background-color: #DAFADB ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }   
+
+.texte-vert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom:5%;
+    width: 100%;
+    }
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1s ease;
+    }
+
+.visible {
+    opacity: 1;
+    transition: opacity 1s ease;
+    }
+
+.texte-1 {
+    margin-left: 7%;
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.5;
+    }
+
+.h4 {
+    font-family: Inika;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    }
+
+#new {
+    color:#009305;
+    font-weight: bold;
+    }
+
+#msg {
+    color:#13C118;
+    }    
+
+.boutons {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap : 10%;
+    width : 90%;
+    }
+
+.bouton-lien {
+    font-family: Inika;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    color: #020202;
+    border-radius: 40px;
+    border: none;
+    width : 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap : 5%;
+    }
+
+.texte-icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    }
+
+.accroche-tuto, .slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 5% 0 5% 0;
+    }
+
+h2 {
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    text-align: center;
+    color: #020202;
+    }
+
+h3 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+    color: #020202;
+    }
+
+.bandeau_tuto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    }
+
+.tuto_1, .tuto_2, .tuto_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+    margin: 2%;
+    }
+
+.tuto {
+    width: 65%;
+    height: 499px;
+    top: 292px;
+    left: 21px;
+    gap: 0px;
+    opacity: 0px;
+    }
+
+.txt_tuto {
+    font-family: Inika;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.27px;
+    text-align: center;
+    width: 30%;
+    }
+
