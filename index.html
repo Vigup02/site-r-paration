@@ -15,102 +15,111 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
 </head>
-<body>
-    <img class="fond" src="./asset/image fond.png" alt="">
-    <div class="corps">      
-        <nav>
-            <div class="header">
-                <p class="logo">Répar’tout</p>
-                <div class="bouton-page">
-                    <div class="bouton-secondaire">
-                        <a href="">qui sommes nous ?</a>
-                        <a href="">nos services</a>
-                        <a href="">nos tutos</a>
-                    </div>
-                    <button class="bouton-primaire">prendre un rendez-vous</button>
+<body>   
+    <nav>
+        <div class="header">
+            <p class="logo">Répar’tout</p>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </label>
+            <div class="bouton-page">
+                <div class="bouton-secondaire">
+                    <a href="">nos tutos</a>
+                    <a href="">nos services</a>
+                    <a href="">qui sommes nous ?</a>
                 </div>
+                <button class="bouton-primaire">prendre un rendez-vous</button>
             </div>
-        </nav>  
-        <h1>donnez une seconde vie à vos électroménagers !</h1>
-        <section>
-            <div class="barre-recherche"> 
-                <div class="barre">
-                    <select class="select">
-                        <option value="" disabled selected style="display:none;">mon type d'appareil</option>
-                        <option value="machine à laver">Machine à laver</option>
-                        <option value="aspirateur">Aspirateur</option>
-                        <option value="réfrigérateur">Réfrigérateur</option>
-                    </select>
-                    <select class="select">
-                        <option value="" disabled selected style="display:none;">marque</option>
-                        <option value="samsung">Samsung</option>
-                        <option value="bosch">Bosch</option>
-                        <option value="whirlpool">Whirlpool</option>
-                    </select>
-                    <select class="select">
-                        <option value="" disabled selected style="display:none;">le modèle</option>
-                        <option value="kk">KK 001</option>
-                        <option value="lm">LM 002</option>
-                        <option value="pl">PL 003</option>
-                    </select>
-                    <input type="text" id="searchInput" placeholder="recherchez ici...">
-                    <button class="loupe" onclick="performSearch()">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </div>
-                <div class="déroulant">
-                    <div class="Mon-appareil">
-                        <img src="./asset/home-01.png" alt="mon appareil">
-                        <div class="nom">
-                            <p>Mon appareil</p>
-                            <p>bosh B57CR22N0</p>
-                        </div>
-                    </div>
-                    <div class="validation">
-                        <div class="texte-vert">
-                            <img id="point-vert" class="visible" src="./asset/Ellipse verte.png" alt="validé">
-                            <div class="texte-1">
-                                <h4 id="new">bonne nouvelle!</h4>
-                                <h4 id="msg">votre produit est reparable chez nous</h4>
-                            </div>
-                        </div>
-                        <div class="boutons">
-                            <button class="bouton-lien">obtenir un devis</button>
-                            <button class="bouton-lien" class="texte-icone">
-                                <span class="texte-2">prendre un rdv</span>
-                                <img src="./asset/home-02.png" alt="contact" class="icone">
-                            </button>
-                        </div>
+        </div>
+    </nav>  
+    <h1>donnez une seconde vie à vos électroménagers !</h1>
+    <section>
+        <div class="barre-recherche"> 
+            <div class="barre">
+                <select class="select">
+                    <option value="" disabled selected style="display:none;">Mon type d'appareil</option>
+                    <option value="machine à laver">Machine à laver</option>
+                    <option value="aspirateur">Aspirateur</option>
+                    <option value="réfrigérateur">Réfrigérateur</option>
+                </select>
+                <select class="select">
+                    <option value="" disabled selected style="display:none;">marque</option>
+                    <option value="samsung">Samsung</option>
+                    <option value="bosch">Bosch</option>
+                    <option value="whirlpool">Whirlpool</option>
+                </select>
+                <select class="select">
+                    <option value="" disabled selected style="display:none;">le modèle</option>
+                    <option value="kk">KK 001</option>
+                    <option value="lm">LM 002</option>
+                    <option value="pl">PL 003</option>
+                </select>
+                <input type="text" id="searchInput" placeholder="recherchez ici...">
+                <button class="loupe" onclick="performSearch()">
+                    <i class="bi bi-search"></i>
+                </button>
+                <input type="checkbox" id="menu-toggle-2">
+                <label for="menu-toggle-2" class="burger2">
+                    <div class="line4"></div>
+                    <div class="line5"></div>
+                    <div class="line6"></div>
+                </label>
+            </div>
+            <div class="déroulant">
+                <div class="Mon-appareil">
+                    <img src="./asset/home-01.png" alt="mon appareil" >
+                    <div class="nom">
+                        <p>Mon appareil</p>
+                        <p>bosh B57CR22N0</p>
                     </div>
                 </div>
-            </div>
-            <div class=accroche-tuto>
-                <h2>vous souhaitez le réparer vous même?</h2>
-                <h3>découvrez nos sélection de tutos en lien avec votre produit.</h3>
-            </div>
-            <div class="bandeau_tuto">
-                <div class="tuto_1">
-                    <img class="tuto" src="./asset/Video_1.png" alt="grille pain ">
-                    <p class="txt_tuto">Decouvrez dans une courte video d’une heure comment et pourquoi votre grille pain ne s’allume plus.
-                        Nous vous proposons une astuce pour lui redonner une second vie </p>
-                </div>
-                <div class="tuto_2">
-                    <p class="txt_tuto">Votre machine à laver comment et pourquoi votre grille pain ne s’allume plus.
-                        Nous vous proposons une astuce pour lui redonner une second vie e tout les probleme. </p>
-                    <img class="tuto" src="./asset/Video_2.png" alt="lave linge">
-                </div>
-                <div class="tuto_3">
-                    <img class="tuto" src="./asset/Video_3.png" alt="téléviseur">
-                    <p class="txt_tuto">ici on vous montre un tuto qui rendra votre tv plus forte que jamais !</p>
+                <div class="validation">
+                    <div class="texte-vert">
+                        <img id="point-vert" class="visible" src="./asset/Ellipse verte.png" alt="validé">
+                        <div class="texte-1">
+                            <h4 id="new">bonne nouvelle!</h4>
+                            <h4 id="msg">votre produit est reparable chez nous</h4>
+                        </div>
+                    </div>
+                    <div class="boutons">
+                        <button class="bouton-lien">obtenir un devis</button>
+                        <button class="bouton-lien" class="texte-icone">
+                            <span class="texte-2">prendre un rdv</span>
+                            <img src="./asset/home-02.png" alt="contact" class="icone">
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class=slogan>
-                <h3>n’attendez plus!</h3>
-                <h3>choisissez votre rendez le plus proche 
-                    pour bénéficier de nos service premium dans nos nombreux point de vente</h3>
+        </div>
+        <div class=accroche-tuto>
+            <h2>vous souhaitez le réparer vous même?</h2>
+            <h3>découvrez nos sélection de tutos en lien avec votre produit.</h3>
+        </div>
+        <div class="bandeau_tuto">
+            <div class="tuto_1">
+                <img class="tuto" src="./asset/Video_1.png" alt="grille pain ">
+                <p class="txt_tuto">Decouvrez dans une courte video d’une heure comment et pourquoi votre grille pain ne s’allume plus.
+                    Nous vous proposons une astuce pour lui redonner une second vie </p>
             </div>
-        </section>
-    </div>
+            <div class="tuto_2">
+                <p class="txt_tuto">Votre machine à laver comment et pourquoi votre grille pain ne s’allume plus.
+                    Nous vous proposons une astuce pour lui redonner une second vie e tout les probleme. </p>
+                <img class="tuto" src="./asset/Video_2.png" alt="lave linge">
+            </div>
+            <div class="tuto_3">
+                <img class="tuto" src="./asset/Video_3.png" alt="téléviseur">
+                <p class="txt_tuto">ici on vous montre un tuto qui rendra votre tv plus forte que jamais !</p>
+            </div>
+        </div>
+        <div class=slogan>
+            <h3>n’attendez plus!</h3>
+            <h3>choisissez votre rendez le plus proche 
+                pour bénéficier de nos service premium dans nos nombreux point de vente</h3>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>

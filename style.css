@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1;background: #000000;
 }
 ol, ul {
 	list-style: none;
@@ -52,50 +52,33 @@ select {color: none;
 }
 
 /* MON CSS */
-body {
-    background-position: center;
-    border: 0,5% solid #FFFFFF99;
-    background-size: cover;
-    background-repeat: no-repeat;
-    }
-
-.fond {
-    opacity: 70%;
-    }
-
-.fond, .corps {
-    position: absolute;
-    width: 100%;
-    }
 
 .header {
-    padding: 2% 0 2% 0;
-    position: absolute;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content:space-between;
+    padding-top: 3%;
     width: 100%;
     }
 
 .logo {
     font-family: Inder, sans-serif;
-    font-size: 40px;
-    color:#020202;
+    font-size: 64px;
+    color:#00CFFF;
     margin-left: 2%;
-    display: flex;
-    width: 25%;
+    cursor: pointer;
     }
     
 .bouton-page {
-    color:#020202;
+    color:#00CFFF;
     font-family: "Inter", sans-serif;
     font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 75%;
-    height: 100%;
-    }
+    height: auto;
+    margin-left: 5%;}
 
 .bouton-secondaire {
     width: 75%;
@@ -114,11 +97,36 @@ body {
     border-radius: 40px;
     border: none;
     width: 25%;
+    color:#00CFFF;
+    cursor: pointer;
     }
 
 .bouton-primaire:hover, .bouton-lien:hover {
-    background-color: #f59f44;
+    background-color: #ff306b;
     }
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 24px;
+    padding-right: 5%;
+}
+
+.burger div {
+    width: 100%;
+    height: 4px;
+    background-color: #00CFFF;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Hide the checkbox */
+#menu-toggle {
+    display: none;
+}
 
 h1 {
     font-family: "Inter", sans-serif;
@@ -127,7 +135,7 @@ h1 {
     line-height: 120%;
     text-align: center;
     margin: 10%;
-    color: #020202;
+    color: #00CFFF;
     }
 
 .barre-recherche {
@@ -136,13 +144,14 @@ h1 {
 
 .barre {
     width: 93%;
-    height: 64px;
+    height: 100%;
     margin-left: 5%;
     gap: 0px;
     border-radius: 40px;
-    border: 1px solid #020202;
+    border: 1px solid #00CFFF;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     }
 
 .select {
@@ -152,10 +161,12 @@ h1 {
     line-height: 30px;
     text-align: center;
     border: none;
-    border-right: 1px solid #020202;
+    border-right: 1px solid #00CFFF;
+    color : #00CFFF;
     background:none;
     width: 100%;
-    height: 100%;
+    height: 64px;
+    cursor: pointer;
     }
 
 #searchInput {
@@ -164,27 +175,67 @@ h1 {
     font-weight: 400;
     line-height: 30px;
     text-align: center;
-    color: #020202;
+    color : #00CFFF;
     width: 100%;
     background: none;
     border: none;
     }
 
 input::placeholder {
-    color: #020202; 
+    color : #00CFFF; 
     }
 
 button.loupe {
     background:none;
     border: none;
+    color : #828282;
+    cursor: pointer;
+    margin-right: 40px;
     }
     
 .loupe i:hover {
-    color: #f59f44;
+    color: #ff306b;
     }
 
 button.loupe i {
-    font-size: 46px
+    font-size: 30px
+    }
+
+#menu-toggle-2 {
+    display: none;
+}
+
+.burger2 {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 24px;
+    height: 100%;
+    padding: 0 2% 0 2%;
+    border-left: 1px solid #00CFFF;
+}
+
+.burger2 div {
+    background-color: #00CFFF;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.line4 {
+    width: 18px;
+    height: 2px;
+    }
+
+.line5 {
+    width: 12px;
+    height: 2px;
+    }
+
+.line6 {
+    width: 4px;
+    height: 2px;
     }
 
 .déroulant {
@@ -214,7 +265,8 @@ button.loupe i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left:3%
+    margin-left:3%;
+    color :#00CFFF;
     }
 
 .validation {
@@ -367,3 +419,129 @@ h3 {
     width: 30%;
     }
 
+/* Media query for tablets and phones */
+@media (max-width: 800px) {
+    .logo {font-size: 24px;
+    }
+    
+    .bouton-page {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #00CFFF;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .bouton-secondaire {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .bouton-secondaire a {
+        margin: 15px 0;
+        color :#000000
+    }
+
+    .bouton-primaire {
+        width: 80%;
+        margin: 15px 0;
+        color :#000000
+    }
+
+    .burger {
+        display: flex;
+    }
+
+
+    /* Show the menu when checkbox is checked */
+    #menu-toggle:checked ~ .bouton-page {
+        display: flex;
+    }
+
+    /* Animate the burger icon */
+    #menu-toggle:checked + .burger .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    #menu-toggle:checked + .burger .line2 {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked + .burger .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .barre {
+        width: 93%;
+        height: 32px;
+    }
+
+    #searchInput { 
+        font-size: 14px;
+    }
+
+    .select {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #00CFFF;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        }
+    
+
+    button.loupe i {
+        font-size: 24px;
+        padding : 2px;
+        }
+
+    button.loupe {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    .burger2 {
+        display:flex;
+        justify-items: flex-end;
+    }
+
+    /* Show the menu when checkbox is checked */
+    #menu-toggle-2:checked ~ .select {
+        display: flex;
+    }
+
+    /* Animate the burger2 icon */
+    #menu-toggle-2:checked + .burger2 .line4 {
+        transform: rotate(-90deg) translate(-5px, 6px);
+    }
+
+    #menu-toggle-2:checked + .burger2 .line5 {
+        opacity: 0;
+    }
+
+    #menu-toggle-2:checked + .burger2 .line6 {
+        opacity: 0;;
+    }
+
+    #menu-toggle-2:checked ~ .select {
+        display: block; /* Affiche les sélections d'appareil, marque et modèle */
+        margin-top: 10px; /* Espacement entre les sélections et le champ de recherche */
+    }
+
+    .select {
+        flex-direction: column; /* Affiche les éléments en colonne sur les petits écrans */
+        height: auto; /* Hauteur automatique pour s'adapter au contenu */
+        padding-bottom: 10px; /* Espacement en bas de la barre */
+    }
+}
