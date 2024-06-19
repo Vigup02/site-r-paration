@@ -48,7 +48,8 @@ a {
     color: inherit;
     }
 
-select {opacity: 100%;
+select {
+    opacity: 100%;
 }
 
 /* MON CSS */
@@ -59,7 +60,7 @@ select {opacity: 100%;
     justify-content:space-between;
     padding-top: 3%;
     width: 100%;
-    }
+}
 
 .logo {
     font-family: Inder, sans-serif;
@@ -67,7 +68,7 @@ select {opacity: 100%;
     color:#00CFFF;
     margin-left: 2%;
     cursor: pointer;
-    }
+}
     
 .bouton-page {
     color:#00CFFF;
@@ -78,7 +79,8 @@ select {opacity: 100%;
     justify-content: space-between;
     width: 75%;
     height: auto;
-    margin-left: 5%;}
+    margin-left: 5%;
+}
 
 .bouton-secondaire {
     width: 75%;
@@ -86,7 +88,7 @@ select {opacity: 100%;
     display: flex;
     align-items: center;
     justify-content:flex-end;
-    }
+}
 
 .bouton-primaire {
     font-family: Inter;
@@ -169,7 +171,7 @@ h1 {
     cursor: pointer;
     }
 
-#searchInput {
+.searchInput {
     font-family: Inder;
     font-size: 24px;
     font-weight: 400;
@@ -302,8 +304,6 @@ button.loupe i {
 .texte-1 {
     margin-left: 7%;
     display:flex;
-    justify-items: center;
-    align-items: center;
     flex-direction: column;
     line-height: 1.5;
     }
@@ -342,12 +342,13 @@ button.loupe i {
     color :#00CFFF;
     border-radius: 40px;
     border: none;
-    width : 50%;
-    height: 100%;
+    width : 100%;
+    height: 60%;
     display: flex;
     justify-content: center;
     align-items:center;
-    gap : 5%;
+    gap : 10%;
+    padding : 2%;
     }
 
 #texte-icone {
@@ -358,13 +359,18 @@ button.loupe i {
     flex-direction: row;
     }
 
+.bouton-contact {
+    display: none;
+    }    
+
 .accroche-tuto, .slogan {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 75%;
     flex-direction: column;
-    margin: 5% 0 5% 0;
+    margin: 5% 0% 5% 12.5%;
     }
 
 h2 {
@@ -400,15 +406,19 @@ h3 {
     text-align: center;
     gap: 5%;
     margin: 2%;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     }
 
 .tuto {
     width: 65%;
-    height: 499px;
+    height: auto;
     top: 292px;
     left: 21px;
     gap: 0px;
-    opacity: 0%;
+    opacity: 100%;
     }
 
 .txt_tuto {
@@ -418,7 +428,102 @@ h3 {
     line-height: 31.27px;
     text-align: center;
     width: 30%;
+    color :#00CFFF;
     }
+
+.zonecontact {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 3%;
+}
+
+.carte {
+    width: 50%;
+    height: 100%;
+    margin-left: 2%; 
+}
+
+.saisir {
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.recherche {
+    width: 80%;
+    margin-bottom: 3%;
+    border-radius: 40px;
+    border: 1px solid #00CFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.agenda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    margin:0;
+}
+
+.date {
+    width: 45%; 
+    margin: 5px;
+    box-sizing: border-box;
+}
+.google {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avis {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 0 5% 0;
+}
+
+.profil {
+    width: 100px;
+}
+
+.flèche{
+    margin:2%;
+}
+
+.carrousel {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.notation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:1%;
+}
+
+.ggle { 
+    width: 30%;
+}
+
+
 
 /* Media query for tablets and phones */
 @media (max-width: 800px) {
@@ -430,7 +535,7 @@ h3 {
         position: absolute;
         top: 60px;
         right: 0;
-        width: 100%;
+        width: 60%;
         background-color: #00CFFF;
         color :#000000;
         flex-direction: column;
@@ -442,17 +547,21 @@ h3 {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        height: 60%;
     }
 
     .bouton-secondaire a {
         margin: 15px 0;
-        color :#000000
+        color :#000000;
+        font-size: 16px;
     }
 
     .bouton-primaire {
-        width: 80%;
-        margin: 15px 0;
-        color :#000000
+        width: 90%;
+        margin: 5%;
+        padding: 3%;
+        color :#000000;
+        font-size: 16px;
     }
 
     .burger {
@@ -483,7 +592,7 @@ h3 {
         height: 32px;
     }
 
-    #searchInput { 
+    .searchInput { 
         font-size: 14px;
     }
 
@@ -547,4 +656,117 @@ h3 {
         height: auto; /* Hauteur automatique pour s'adapter au contenu */
         padding-bottom: 10px; /* Espacement en bas de la barre */
     }
+
+    .déroulant {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0 9%;
+        width: 85%
+        }
+
+    .Mon-appareil {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        }
+    
+    #home1 { 
+        width : 10%
+    }
+    
+    .nom {
+        font-size: 14px;
+        display:flex;
+        }
+    
+    
+    .validation {
+        width: 100%;
+        height: auto;
+        gap: 3%;
+        border-radius: 0 0 40px 40px;
+        background-color: #DAFADB ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom:2%;
+        }   
+    
+    .texte-vert {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom:0%;
+        width: 100%;
+        margin : 5%;
+        font-size: 14px;
+        }
+
+    .texte-1 {
+        margin-left: 0%;
+        }
+
+    #new {
+        text-align: center;
+        width: 100%;
+        }
+    
+    #msg {
+        text-align: center;
+        width: 100%;
+    }
+
+    .boutons {
+        display: none;
+    }
+    
+    .bouton-lien{
+        background-color :#00CFFF;
+        color:#000000;
+        font-size: 12px;
+    }
+
+    .bouton-contact {
+        display: flex;
+        width : 40%;
+        margin : 3%;
+        }    
+
+    h2 {
+        font-size: 16px;
+        line-height: 20px;
+        width : 100%;
+    }
+    
+    h3 {
+        font-size: 16px;
+        line-height: 20px;
+        width : 100%;
+        }
+
+    .tuto_1, .tuto_2, .tuto_3 {
+        display: flex;
+        flex-direction:row-reverse;
+        }
+
+    .txt_tuto{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .carte {
+        display: none; 
+    }
+
+    .notation {
+        flex-direction: column;
+    }
+    
+    .ggle { 
+        width: 80%;
+    }
+
 }

@@ -55,7 +55,7 @@
                     <option value="lm">LM 002</option>
                     <option value="pl">PL 003</option>
                 </select>
-                <input type="text" id="searchInput" placeholder="recherchez ici...">
+                <input type="text" class="searchInput" placeholder="recherchez ici...">
                 <button class="loupe" onclick="performSearch()">
                     <i class="bi bi-search"></i>
                 </button>
@@ -68,7 +68,7 @@
             </div>
             <div class="déroulant">
                 <div class="Mon-appareil">
-                    <img src="./asset/home-01.png" alt="mon appareil" >
+                    <img src="./asset/home-01.png" alt="mon appareil" id="home1" >
                     <div class="nom">
                         <p>Mon appareil</p>
                         <p>bosh B57CR22N0</p>
@@ -85,10 +85,13 @@
                     <div class="boutons">
                         <button class="bouton-lien">obtenir un devis</button>
                         <button class="bouton-lien" id="texte-icone">
-                            <span class="texte-2">prendre un rdv</span>
+                            <span>prendre un rdv</span>
                             <img src="./asset/home-02.png" alt="contact" class="icone">
                         </button>
                     </div>
+                </div>
+                <div class="bouton-contact">
+                    <button class="bouton-lien">prendre contact</button>
                 </div>
             </div>
         </div>
@@ -98,7 +101,7 @@
         </div>
         <div class="bandeau_tuto">
             <div class="tuto_1">
-                <img class="tuto" src="./asset/Video_1.png" alt="grille pain ">
+                <img class="tuto" src="./asset/Video_1.png" alt="grille pain">
                 <p class="txt_tuto">Decouvrez dans une courte video d’une heure comment et pourquoi votre grille pain ne s’allume plus.
                     Nous vous proposons une astuce pour lui redonner une second vie </p>
             </div>
@@ -116,6 +119,42 @@
             <h3>n’attendez plus!</h3>
             <h3>choisissez votre rendez le plus proche 
                 pour bénéficier de nos service premium dans nos nombreux point de vente</h3>
+        </div>
+        <div class="zonecontact">
+            <img class="carte" src="./asset/Figmap.png" alt="carte">
+            <div class="saisir">
+                <div class="recherche">
+                    <input type="text" class="searchInput" placeholder="recherchez ici...">
+                    <button class="loupe" onclick="performSearch()">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+                <div class="agenda">
+                    <img class="date" src="./asset/juin.png" alt="juin">
+                    <img class="date" src="./asset/juillet.png" alt="juillet">
+                    <img class="date" src="./asset/aout.png" alt="aout">
+                    <img class="date" src="./asset/septembre.png" alt="septembre">
+                </div>
+            </div>
+        </div>
+        <div class=accroche-tuto>
+            <h2>rejoignez notre communaute et partager vos experiences</h2>
+        </div>
+        <img class="google" src="./asset/google.png" alt="note">
+        <div class="carrousel">
+            <img class="flèche" src="./asset/Component1.png" alt="flèche gauche">
+            <div class="avis">
+                <img class="profil" src="./asset/avis1.png" alt="avis1">
+                <img class="profil" src="./asset/avis2.png" alt="avis2">
+                <img class="profil" src="./asset/avis3.png" alt="avis3">
+                <img class="profil" src="./asset/avis4.png" alt="avis4">
+            </div>
+            <img class="flèche" src="./asset/Component2.png" alt="flèche droite">
+        </div>
+        <div class="notation">
+            <img class="ggle" src="./asset/TrustPilot.png" alt="note1">
+            <img class="ggle" src="./asset/TrustPilot1.png" alt="note2">
+            <img class="ggle" src="./asset/TrustPilot2.png" alt="note3">
         </div>
     </section>
     <script src="script.js"></script>
